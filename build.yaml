@@ -14,8 +14,6 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: xiao3_left
-  - board: seeeduino_xiao_ble
-    shield: xiao3_right  
+    shield: xiao3
   - board: seeeduino_xiao_ble
     shield: settings_reset
