@@ -1,3 +1,5 @@
+// xiao3_left.overlay
+
 #include "xiao3.dtsi" 
 
 &left_encoder {
