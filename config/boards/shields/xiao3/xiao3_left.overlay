@@ -41,17 +41,3 @@ nice_view_spi: &spi0 {
         zephyr,display = &nice_view;
     };
 };
-
-    left_encoder: encoder_left {
-		compatible = "alps,ec11";
-		label = "LEFT_ENCODER";
-		a-gpios = <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		b-gpios = <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-		steps = <60>;
-		status = "disabled";
-	};
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder>, <&right_encoder>;
-        triggers-per-rotation = <15>;
-    };
