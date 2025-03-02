@@ -6,11 +6,11 @@
         zmk,matrix_transform = &default_transform;
     };
 
-    &zmk_rgb_underglow {
+    ws2812: ws2812_leds {
         compatible = "zmk,rgb-underglow";
         label = "WS2812";
-        gpios = <&gpio0 28 GPIO_ACTIVE_HIGH>;  // Ensure this is the correct data pin
-        chain-length = <31>;  // Number of LEDs
+        gpios = <&gpio0 28 GPIO_ACTIVE_HIGH>;  // Change to your actual LED data pin
+        chain-length = <31>;  // Number of LEDs in the strip
     };
 
     vbatt: vbatt {
