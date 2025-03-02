@@ -29,12 +29,12 @@
 
         nav {
             bindings = <
-&sys_reset    &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4          &sys_reset        &kp N7             &kp N8        &kp N9        &trans  &trans
-&bootloader   &rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &kp UP_ARROW  &rgb_ug RGB_HUI  &trans                &bootloader       &kp NUMBER_4       &kp N5        &kp NUMBER_6  &trans  &trans
-&kp CAPSLOCK  &trans           &kp LEFT         &kp DOWN      &kp RIGHT        &trans                &trans            &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &trans  &kp ASTERISK
-&bootloader   &trans           &trans           &trans        &trans           &trans                &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N0        &trans        &trans  &trans
-                                                &trans        &bootloader      &trans        &trans  &trans            &trans
-                                                              &trans           &trans        &trans  &trans
+&sys_reset    &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4             &sys_reset        &kp N7             &kp N8        &kp N9        &trans  &trans
+&bootloader   &rgb_ug RGB_TOG  &rgb_ug RGB_HUD  &kp UP_ARROW  &rgb_ug RGB_HUI  &rgb_ug RGB_BRI          &bootloader       &kp NUMBER_4       &kp N5        &kp NUMBER_6  &trans  &trans
+&kp CAPSLOCK  &trans           &kp LEFT         &kp DOWN      &kp RIGHT        &rgb_ug RGB_BRD          &trans            &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &trans  &kp ASTERISK
+&bootloader   &trans           &trans           &trans        &rgb_ug RGB_EFR  &rgb_ug RGB_EFF          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N0        &trans        &trans  &trans
+                                                &trans        &bootloader      &trans           &trans  &trans            &trans
+                                                              &trans           &trans           &trans  &trans
             >;
         };
 
