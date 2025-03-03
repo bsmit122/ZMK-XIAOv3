@@ -1,7 +1,7 @@
 if SHIELD_XIAO3_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Skree Custom"
+    default "ZMK Birk"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
