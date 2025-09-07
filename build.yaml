@@ -15,11 +15,9 @@
 include:
   - board: seeeduino_xiao_ble
     shield: xiao3_left
-    shield: my_keyboard
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: seeeduino_xiao_ble
     shield: xiao3_right  
-    shield: my_keyboard
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: seeeduino_xiao_ble
     shield: settings_reset
