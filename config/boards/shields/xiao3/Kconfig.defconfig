@@ -10,17 +10,14 @@
 
 #endif
 
-if SHIELD_XIAO3_LEFT
+if SHIELD_XIAO3_LEFT || SHIELD_XIAO3_RIGHT
 
 config ZMK_SPLIT
     default y
-
-endif
-
-if SHIELD_XIAO3_RIGHT
-
-config ZMK_SPLIT
-    default y
+    
+# Both halves should be peripherals when using a dongle
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
 
 endif
 
