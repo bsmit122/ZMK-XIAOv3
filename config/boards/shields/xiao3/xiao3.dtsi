@@ -28,7 +28,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)		RC(3,6) RC(3,7) RC(3,8) RC(3,9)
 
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
-
+    wakeup-source;
         diode-direction = "col2row";
         row-gpios
             = <&gpio1 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> //r1-7 1.12 1.13 0.02 0.03 0.28** 1.11** 0.10*thumbs
