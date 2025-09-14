@@ -15,6 +15,21 @@ if SHIELD_XIAO3_LEFT || SHIELD_XIAO3_RIGHT
 config ZMK_SPLIT
     default y
 
+config ZMK_SLEEP
+    default y
+
+config SPI
+    default y
+
+config ZMK_RGB_UNDERGLOW_EXT_POWER
+    default n
+
+config ZMK_KSCAN_MATRIX_WAIT_BEFORE_INPUTS
+    default 0
+
+config ZMK_KSCAN_MATRIX_WAIT_BETWEEN_OUTPUTS
+    default 1
+    
 endif
 
 if SHIELD_DONGLE
@@ -41,5 +56,8 @@ config BT_MAX_CONN
 # Set this to the same number as BT_MAX_CONN
 config BT_MAX_PAIRED
     default 6
+
+config ZMK_RGB_UNDERGLOW_EXT_POWER
+    default n
 
 endif
