@@ -1,15 +1,4 @@
-
-#Uncomment sectiont to use left half as master
-#if SHIELD_XIAO3_LEFT
-
-#config ZMK_KEYBOARD_NAME
-#    default "ZMK Birk"
-
-#config ZMK_SPLIT_ROLE_CENTRAL
-#    default y
-
-#endif
-
+####################################################
 if SHIELD_XIAO3_LEFT || SHIELD_XIAO3_RIGHT
 
 config ZMK_SPLIT
@@ -32,11 +21,12 @@ config ZMK_KSCAN_MATRIX_WAIT_BETWEEN_OUTPUTS
     
 endif
 
+####################################################
 if SHIELD_DONGLE
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
-    default "Birk ZMK Dongle"
+    default "ZMK Cosmos"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -44,12 +34,9 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_SPLIT
     default y
 
-# Set this to the number of peripherals your dongle will have.
-# For a unibody, this would be 1. If you have left and right halves, set it to 2, etc.
 config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
     default 2
 
-# Set this to ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS + your desired number of BT profiles (default is 5)
 config BT_MAX_CONN
     default 6
 
@@ -61,3 +48,8 @@ config ZMK_RGB_UNDERGLOW_EXT_POWER
     default n
 
 endif
+
+####################################################
+config ZMK_RGB_UNDERGLOW
+    default y
+    imply WS2812_STRIP
